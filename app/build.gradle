@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -55,6 +58,7 @@ dependencies {
     implementation 'androidx.room:room-common:2.3.0'
     implementation 'com.google.ar.sceneform:filament-android:1.17.1'
     implementation 'com.google.mlkit:entity-extraction:16.0.0-beta1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
