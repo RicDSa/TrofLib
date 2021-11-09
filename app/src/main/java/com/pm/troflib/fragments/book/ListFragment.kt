@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_list.view.*
 
 class ListFragment : Fragment() {
 
-    private  lateinit var mProductViewModel: BookViewModel
+    private  lateinit var mBookViewModel: BookViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,7 +36,7 @@ class ListFragment : Fragment() {
             adapter.setData(books)
         })
 
-        view.btnAddProductFromList.setOnClickListener(){
+        view.btnAddBookFromList.setOnClickListener(){
             findNavController().navigate(R.id.action_listFragment_to_addFragment)
         }
 

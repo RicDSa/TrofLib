@@ -54,7 +54,7 @@ class AddFragment : Fragment() {
             ).show()
         }
 
-        val book = Book(0, productName.text.toString())
+        val book = Book(0, bookName.text.toString())
 
         mBookViewModel.addBook(book)
 
@@ -68,6 +68,6 @@ class AddFragment : Fragment() {
     }
 
     private fun isValid() : Boolean {
-        return !TextUtils.isEmpty(productName.text.toString())
+        return !TextUtils.isEmpty(bookName.text.toString())
     }
 }

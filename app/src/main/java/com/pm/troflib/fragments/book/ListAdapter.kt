@@ -13,16 +13,16 @@ import kotlinx.android.synthetic.main.custom_row.view.*
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {}
 
-    private var productList = emptyList<Book>()
+    private var bookList = emptyList<Book>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListAdapter.MyViewHolder {
         return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.custom_row, parent, false))
     }
 
     override fun onBindViewHolder(holder: ListAdapter.MyViewHolder, position: Int) {
-        val currentItem = productList[position]
-        holder.itemView.lst_productId.text = currentItem.id.toString()
-        holder.itemView.lst_productName.text = currentItem.name
+        val currentItem = bookList[position]
+        holder.itemView.lst_bookId.text = currentItem.id.toString()
+        holder.itemView.lst_bookName.text = currentItem.name
 
         if(position%2 == 0){
             holder.itemView.rowLayout.setBackgroundColor(Color.parseColor("#d6d4e0"))
@@ -38,11 +38,11 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return productList.size
+        return bookList.size
     }
 
     fun setData(products: List<Book>){
-        this.productList = products
+        this.bookList = products
         notifyDataSetChanged()
     }
 }

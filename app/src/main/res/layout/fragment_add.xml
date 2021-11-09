@@ -6,7 +6,7 @@
     tools:context=".fragments.book.AddFragment">
 
     <LinearLayout
-        android:id="@+id/ll_main_layout_add_product"
+        android:id="@+id/ll_main_layout_add_book"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left"
@@ -20,7 +20,7 @@
             android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/productName"
+            android:id="@+id/bookName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
