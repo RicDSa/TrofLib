@@ -5,7 +5,7 @@ import com.pm.troflib.data.dao.BookDao
 import com.pm.troflib.data.entities.Book
 
 class BookRepository(private  val bookDao: BookDao) {
-    val readAllBooks : LiveData<List<Book>> = BookDao.readAllBooks()
+    val readAllBooks : LiveData<List<Book>> = bookDao.readAllBooks()
 
     suspend fun addBook(book: Book){
         bookDao.addBook(book)

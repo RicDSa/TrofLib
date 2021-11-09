@@ -15,8 +15,8 @@ class BookViewModel (application: Application) : AndroidViewModel(application){
     private val repository: BookRepository
 
     init {
-        val BookDao = BookDatabase.getDatabase(application).BookDao()
-        repository = BookRepository(BookDao)
+        val bookDao = BookDatabase.getDatabase(application).BookDao()
+        repository = BookRepository(bookDao)
         readAllBooks = repository.readAllBooks
     }
 
@@ -32,9 +32,9 @@ class BookViewModel (application: Application) : AndroidViewModel(application){
         }
     }
 
-    fun  deleteProduct(product: Product) {
+    fun  deleteProduct(book: Book) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteProduct(product)
+            repository.deleteBook(book)
         }
     }
 }
