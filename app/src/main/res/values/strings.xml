@@ -2,6 +2,7 @@
     <string name="app_name">TrofLib</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
     <string name="book">Book</string>
     <string name="empty_book_name">Book name must have a value.</string>
     <string name="book_successfully_added">Book successfully added.</string>
