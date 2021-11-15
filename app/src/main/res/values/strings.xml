@@ -3,4 +3,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="book">Book</string>
+    <string name="empty_book_name">Book name must have a value.</string>
+    <string name="book_successfully_added">Book successfully added.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete">Delete</string>
+    <string name="question_delete">Are you sure you want delete?</string>
+    <string name="book_successfully_updated">Book successfully updated.</string>
+    <string name="book_successfully_deleted">Book successfully deleted.</string>
 </resources>
