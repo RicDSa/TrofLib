@@ -32,7 +32,7 @@ class BookViewModel (application: Application) : AndroidViewModel(application){
         }
     }
 
-    fun  deleteProduct(book: Book) {
+    fun  deleteBook(book: Book) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.deleteBook(book)
         }
