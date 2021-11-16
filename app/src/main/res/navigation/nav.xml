@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.pm.troflib.fragments.book.UpdateFragment"
-        android:label="UpdateFragment" >
+        android:label="UpdateFragment">
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
             app:destination="@id/listFragment" />
