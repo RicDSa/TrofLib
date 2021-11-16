@@ -41,8 +41,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         return bookList.size
     }
 
-    fun setData(products: List<Book>){
-        this.bookList = products
+    fun setData(books: List<Book>){
+        this.bookList = books
         notifyDataSetChanged()
     }
 }
