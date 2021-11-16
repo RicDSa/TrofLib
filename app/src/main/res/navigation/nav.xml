@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/mainActivity">
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.pm.troflib.MainActivity"
-        android:label="activity_main"
-        app:action="a"
-        tools:layout="@layout/activity_main" />
+    app:startDestination="@id/listFragment">
+
     <fragment
         android:id="@+id/listFragment"
         android:name="com.pm.troflib.fragments.book.ListFragment"
