@@ -23,6 +23,12 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         val currentItem = bookList[position]
         holder.itemView.lst_bookId.text = currentItem.id.toString()
         holder.itemView.lst_bookName.text = currentItem.name
+        holder.itemView.lst_bookGenre.text = currentItem.genre
+        holder.itemView.lst_bookAuthor.text = currentItem.author
+        holder.itemView.lst_bookDate.text = currentItem.date_test
+        holder.itemView.lst_bookPubcom.text = currentItem.pubcom
+        holder.itemView.lst_bookNpag.text = currentItem.npag.toString()
+        holder.itemView.lst_bookEnc.text = currentItem.enc
 
         if(position%2 == 0){
             holder.itemView.rowLayout.setBackgroundColor(Color.parseColor("#d6d4e0"))

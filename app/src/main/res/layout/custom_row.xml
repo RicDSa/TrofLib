@@ -27,8 +27,51 @@
             android:id="@+id/lst_bookName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/lst_bookGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textSize="25dp"
             android:padding="5dp"
-            android:text="Name"/>
+            android:text="Genre"/>
+        <TextView
+            android:id="@+id/lst_bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Author"/>
+        <TextView
+            android:id="@+id/lst_bookDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/lst_bookPubcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Pub Company"/>
+        <TextView
+            android:id="@+id/lst_bookNpag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Nº pag"/>
+        <TextView
+            android:id="@+id/lst_bookEnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="Book binding"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

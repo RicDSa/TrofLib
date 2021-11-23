@@ -3,6 +3,7 @@ package com.pm.troflib.data.entities
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.ColumnInfo
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
@@ -11,6 +12,16 @@ import kotlinx.android.parcel.Parcelize
 class Book (
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val name: String
+
+
+    @ColumnInfo(defaultValue = "")
+    val name: String,
+    val genre: String,
+    val author: String,
+    val date_test: String,
+    val pubcom: String,
+    val npag: Int,
+    val enc: String
+
     ) : Parcelable
 

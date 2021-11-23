@@ -1,13 +1,17 @@
 package com.pm.troflib.data.database
 
 import android.content.Context
+import androidx.room.AutoMigration
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pm.troflib.data.dao.BookDao
 import com.pm.troflib.data.entities.Book
 
-@Database(entities = [Book :: class], version = 1, exportSchema = false)
+@Database(entities = [Book :: class],
+    version = 3,
+    exportSchema = true,
+    autoMigrations = [AutoMigration (from = 2, to = 3)])
 abstract class BookDatabase : RoomDatabase() {
 
     abstract fun BookDao() : BookDao
