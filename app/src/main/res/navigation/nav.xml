@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.pm.troflib.fragments.book.ListFragment"
-        android:label="fragment_list"
+        android:label="Book List"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.pm.troflib.fragments.book.AddFragment"
-        android:label="fragment_add"
+        android:label="Add Book"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.pm.troflib.fragments.book.UpdateFragment"
-        android:label="UpdateFragment">
+        android:label="Update Book">
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
             app:destination="@id/listFragment" />
