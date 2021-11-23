@@ -11,7 +11,7 @@ import com.pm.troflib.data.entities.Book
 @Database(entities = [Book :: class],
     version = 3,
     exportSchema = true,
-    autoMigrations = [AutoMigration (from = 2, to = 3)])
+    autoMigrations = [AutoMigration (from = 3, to = 4)])
 abstract class BookDatabase : RoomDatabase() {
 
     abstract fun BookDao() : BookDao

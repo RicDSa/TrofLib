@@ -21,7 +21,6 @@
 
         <EditText
             android:id="@+id/bookName"
-            android:text="Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

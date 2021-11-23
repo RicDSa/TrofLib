@@ -18,4 +18,5 @@ interface BookDao {
 
     @Delete
     fun deleteBook(book: Book)
+
 }

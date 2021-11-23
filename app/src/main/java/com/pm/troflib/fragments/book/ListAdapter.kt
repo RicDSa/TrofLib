@@ -25,7 +25,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.lst_bookName.text = currentItem.name
         holder.itemView.lst_bookGenre.text = currentItem.genre
         holder.itemView.lst_bookAuthor.text = currentItem.author
-        holder.itemView.lst_bookDate.text = currentItem.datlaunche
+        holder.itemView.lst_bookDatlaunch.text = currentItem.datlaunch
         holder.itemView.lst_bookPubcom.text = currentItem.pubcom
         holder.itemView.lst_bookNpag.text = currentItem.npag.toString()
         holder.itemView.lst_bookEnc.text = currentItem.enc
