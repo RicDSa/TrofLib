@@ -46,7 +46,7 @@
             android:padding="5dp"
             android:text="Author"/>
         <TextView
-            android:id="@+id/lst_bookDate"
+            android:id="@+id/lst_bookDatlaunch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"

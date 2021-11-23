@@ -65,7 +65,7 @@ class UpdateFragment : Fragment() {
             ).show()
         }
         val book = Book(args.currentBook.id, updateBookName.text.toString(),updateBookGenre.text.toString(),updateBookAuthor.text.toString(),
-        updateBookDate.text.toString(),updateBookPubcom.text.toString(),Integer.parseInt(updateBookNpag.toString()),updateBookEnc.text.toString())
+        updateBookDatlaunch.text.toString(),updateBookPubcom.text.toString(),Integer.parseInt(updateBookNpag.toString()),updateBookEnc.text.toString())
 
         mBookViewModel.updateBook(book)
 

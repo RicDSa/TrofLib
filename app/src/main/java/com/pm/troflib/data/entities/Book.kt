@@ -18,7 +18,7 @@ class Book (
     val name: String,
     val genre: String,
     val author: String,
-    val date_test: String,
+    val datlaunch: String,
     val pubcom: String,
     val npag: Int,
     val enc: String

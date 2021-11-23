@@ -55,7 +55,7 @@ class AddFragment : Fragment() {
         }
 
         val book = Book(0, bookName.text.toString(),bookgenre.text.toString(),bookauthor.text.toString(),
-            bookdate.text.toString(),bookpubcom.text.toString(),Integer.parseInt(booknpag.toString()),bookenc.text.toString())
+            bookdatlaunch.text.toString(),bookpubcom.text.toString(),Integer.parseInt(booknpag.toString()),bookenc.text.toString())
 
         mBookViewModel.addBook(book)
 
