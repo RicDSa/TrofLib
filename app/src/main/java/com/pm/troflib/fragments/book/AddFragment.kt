@@ -54,8 +54,7 @@ class AddFragment : Fragment() {
             ).show()
         }
 
-        val book = Book(0, bookName.text.toString(),bookgenre.text.toString(),bookauthor.text.toString(),
-            bookdatlaunch.text.toString(),bookpubcom.text.toString(),Integer.parseInt(booknpag.toString()),bookenc.text.toString())
+        val book = Book(0, bookName.text.toString(),bookgenre.text.toString(),bookauthor.text.toString(),bookdatlaunch.text.toString(),bookpubcom.text.toString(),Integer.parseInt(booknpag.text.toString()),bookenc.text.toString())
 
         mBookViewModel.addBook(book)
 
@@ -69,6 +68,7 @@ class AddFragment : Fragment() {
     }
 
     private fun isValid() : Boolean {
-        return !TextUtils.isEmpty(bookName.text.toString())
+        return !(TextUtils.isEmpty(bookName.text.toString()) && TextUtils.isEmpty(bookgenre.text.toString()) && TextUtils.isEmpty(bookauthor.text.toString())
+                && TextUtils.isEmpty(bookdatlaunch.text.toString()) && TextUtils.isEmpty(bookpubcom.text.toString()) && TextUtils.isEmpty(booknpag.text.toString()) && TextUtils.isEmpty(bookenc.text.toString()))
     }
 }

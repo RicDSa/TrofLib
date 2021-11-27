@@ -21,37 +21,38 @@
 
         <EditText
             android:id="@+id/bookName"
+            android:hint="Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/bookgenre"
-            android:label="Genre"
+            android:hint="Genre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/bookauthor"
-            android:label="Author"
+            android:hint="Author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/bookdatlaunch"
-            android:label="Date Launch dd/mm/yyyy"
+            android:hint="Date Launch dd/mm/yyyy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/bookpubcom"
-            android:label="Publish Company"
+            android:hint="Publish Company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/booknpag"
-            android:label="Number of pages"
+            android:hint="Number of pages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/bookenc"
-            android:label="Book Binding"
+            android:hint="Book Binding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
