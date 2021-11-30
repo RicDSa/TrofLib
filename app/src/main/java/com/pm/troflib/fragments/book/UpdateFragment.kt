@@ -32,6 +32,12 @@ class UpdateFragment : Fragment() {
         mBookViewModel = ViewModelProvider(this).get(BookViewModel::class.java)
 
         view.updateBookName.setText(args.currentBook.name)
+        view.updateBookGenre.setText(args.currentBook.genre)
+        view.updateBookAuthor.setText(args.currentBook.author)
+        view.updateBookDatlaunch.setText(args.currentBook.datlaunch)
+        view.updateBookPubcom.setText(args.currentBook.pubcom)
+        view.updateBookNpag.setText(args.currentBook.npag)
+        view.updateBookEnc.setText(args.currentBook.enc)
 
         setHasOptionsMenu(true)
 
