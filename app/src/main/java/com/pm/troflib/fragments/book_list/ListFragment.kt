@@ -1,4 +1,4 @@
-package com.pm.troflib.fragments.book
+package com.pm.troflib.fragments.book_list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

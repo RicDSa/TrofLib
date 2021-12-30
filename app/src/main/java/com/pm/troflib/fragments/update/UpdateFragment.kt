@@ -1,4 +1,4 @@
-package com.pm.troflib.fragments.book
+package com.pm.troflib.fragments.update
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -13,7 +13,6 @@ import com.pm.troflib.R
 import com.pm.troflib.data.entities.Book
 import com.pm.troflib.data.viewmodel.BookViewModel
 import com.pm.troflib.utils.Utils.Companion.hideKeyboard
-import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
 
