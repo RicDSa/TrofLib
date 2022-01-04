@@ -8,7 +8,7 @@
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="signin">Signin</string>
+    <string name="signin">Sign In</string>
     <string name="empty_book_name">Book name must have a value.</string>
     <string name="book_successfully_added">Book successfully added.</string>
     <string name="yes">Yes</string>

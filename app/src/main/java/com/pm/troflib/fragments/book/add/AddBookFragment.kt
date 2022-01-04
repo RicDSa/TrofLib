@@ -16,8 +16,6 @@ import com.pm.troflib.utils.Utils.Companion.hideKeyboard
 import com.pm.troflib.utils.Utils.Companion.somethingWentWrong
 import com.pm.troflib.utils.Utils.Companion.unauthorized
 import kotlinx.android.synthetic.main.fragment_add_book.*
-import kotlinx.android.synthetic.main.fragment_books_list.view.*
-import kotlinx.android.synthetic.main.fragment_update_book.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -43,15 +41,15 @@ class AddBookFragment : Fragment() {
         hideKeyboard()
 
         if (item.itemId == R.id.menu_add_book) {
-            addReport()
+            addBook()
         }
 
         return super.onOptionsItemSelected(item)
     }
 
-    private fun addReport() {
+    private fun addBook() {
         if (TextUtils.isEmpty(add_book_title.text.toString()) || TextUtils.isEmpty(
-                add_book_author.text.toString(),
+                add_book_author.text.toString()
             )
         ) {
             Toast.makeText(
