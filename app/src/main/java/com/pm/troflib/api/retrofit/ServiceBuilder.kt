@@ -4,7 +4,7 @@ import com.pm.troflib.api.utils.Constants.Companion.API_URL
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.Retrofit.Builder
+
 
 object ServiceBuilder {
     private  val client = OkHttpClient.Builder().build()

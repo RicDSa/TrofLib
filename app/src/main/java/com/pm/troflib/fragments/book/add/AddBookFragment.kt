@@ -50,7 +50,7 @@ class AddBookFragment : Fragment() {
     }
 
     private fun addReport() {
-        if (TextUtils.isEmpty(add_report_title.text.toString()) || TextUtils.isEmpty(
+        if (TextUtils.isEmpty(add_book_title.text.toString()) || TextUtils.isEmpty(
                 add_book_author.text.toString(),
             )
         ) {
@@ -74,7 +74,7 @@ class AddBookFragment : Fragment() {
                 dtlaunch = add_book_dtlaunch.text.toString(),
                 publishcompany = add_book_publishcompany.text.toString(),
                 npages = Integer.parseInt(add_book_npages.text.toString()),
-                cape = add_book_cape.text.toString()
+                cover = add_book_cover.text.toString()
             )
 
             call.enqueue(object : Callback<BookDto> {
@@ -87,10 +87,10 @@ class AddBookFragment : Fragment() {
                         if (book.status == "OK") {
                             Toast.makeText(
                                 requireContext(),
-                                getString(R.string.successfull_added_new_note),
+                                getString(R.string.successfull_added_new_book),
                                 Toast.LENGTH_LONG
                             ).show()
-                            findNavController().navigate(R.id.action_addBookFragment_to_reportsListFragment)
+                            findNavController().navigate(R.id.action_addBookFragment_to_booksListFragment)
                         } else {
                             Toast.makeText(
                                 requireContext(), getString(

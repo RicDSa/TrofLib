@@ -40,6 +40,9 @@ class BooksListAdapter(userIdInSession: String?) : RecyclerView.Adapter<BooksLis
         holder.itemView.books_list_author.text = currentItem.author
         holder.itemView.books_list_genre.text = currentItem.genre
         holder.itemView.books_list_dtlaunch.text = currentItem.dtlaunch
+        holder.itemView.books_list_publishcompany.text = currentItem.publishcompany
+        holder.itemView.books_list_npages.text = currentItem.npages.toString()
+        holder.itemView.books_list_cover.text = currentItem.cover
 
         if(position%2 == 0){
             holder.itemView.setBackgroundColor(Color.parseColor("#d6d4e0"))

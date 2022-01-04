@@ -8,7 +8,7 @@
 
     <include
         android:id="@+id/llProgressBar"
-        layout="@layout/progessbar"
+        layout="@layout/progressbar"
         android:visibility="gone" />
 
     <LinearLayout

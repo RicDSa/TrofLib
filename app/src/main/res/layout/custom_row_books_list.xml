@@ -13,6 +13,10 @@
         android:gravity="left"
         android:padding="0dp"
         android:orientation="vertical">
+        <include
+            android:id="@+id/llProgressBar"
+            layout="@layout/progressbar"
+            android:visibility="gone" />
         <TextView
             android:id="@+id/books_list_title"
             android:layout_width="wrap_content"
@@ -25,9 +29,10 @@
             android:id="@+id/books_list_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
             android:padding="5dp"
-            android:text="Author"/>
+            android:text="Author"
+            android:textSize="15dp" />
+
         <TextView
             android:id="@+id/books_list_genre"
             android:layout_width="wrap_content"

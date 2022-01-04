@@ -38,7 +38,7 @@
     <string name="logout_question">Do you want log out?</string>
     <string name="refresh">Refresh</string>
     <string name="add_book">New book</string>
-    <string name="update_report">Update report</string>
+    <string name="update_book">Update book</string>
     <string name="fill_title_and_description">Please fill title and description!</string>
     <string name="successfull_added_new_book">Book has been successfully added!</string>
     <string name="delete_book">Delete book</string>

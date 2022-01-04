@@ -36,6 +36,11 @@ class UpdateBookFragment : Fragment() {
 
         view.update_book_title.setText(args.currentBook.title)
         view.update_book_author.setText(args.currentBook.author)
+        view.update_book_author.setText(args.currentBook.genre)
+        view.update_book_author.setText(args.currentBook.dtlaunch)
+        view.update_book_author.setText(args.currentBook.publishcompany)
+        view.update_book_author.setText(args.currentBook.npages)
+        view.update_book_author.setText(args.currentBook.cover)
 
         return view
     }
@@ -48,19 +53,19 @@ class UpdateBookFragment : Fragment() {
         hideKeyboard()
 
         if (item.itemId == R.id.menu_delete_book) {
-            deleteReport()
+            deleteBook()
         }
 
         if (item.itemId == R.id.menu_update_book) {
-            updateReport()
+            updateBook()
         }
 
         return super.onOptionsItemSelected(item)
     }
 
-    private fun updateReport() {
+    private fun updateBook() {
         if (TextUtils.isEmpty(update_book_title.text.toString()) || TextUtils.isEmpty(
-                update_book_description.text.toString()
+                update_book_author.text.toString()
             )
         ) {
             Toast.makeText(
@@ -71,11 +76,16 @@ class UpdateBookFragment : Fragment() {
                 .show()
         } else {
             val request = ServiceBuilder.buildService(BookApi::class.java)
-            val call = request.updateReport(
+            val call = request.updateBook(
                 token = "Bearer ${getToken()}",
-                id = args.currentReport.id,
+                id = args.currentBook.id,
                 title = update_book_title.text.toString(),
-                description = update_report_description.text.toString()
+                author = update_book_author.text.toString(),
+                genre = update_book_genre.text.toString(),
+                dtlaunch = update_book_dtlaunch.text.toString(),
+                publishcompany = update_book_publishcompany.text.toString(),
+                npages = Integer.parseInt(update_book_npages.text.toString()),
+                cover = update_book_cover.text.toString(),
             )
 
             call.enqueue(object : Callback<BookDto> {
@@ -118,14 +128,14 @@ class UpdateBookFragment : Fragment() {
         }
     }
 
-    private fun deleteReport() {
+    private fun deleteBook() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setPositiveButton(getString(R.string.yes)) { _, _ ->
 
             val request = ServiceBuilder.buildService(BookApi::class.java)
-            val call = request.deleteReport(
+            val call = request.deleteBook(
                 token = "Bearer ${getToken()}",
-                id = args.currentReport.id
+                id = args.currentBook.id
             )
 
             call.enqueue(object : Callback<BookDto> {
@@ -139,7 +149,7 @@ class UpdateBookFragment : Fragment() {
                                 getString(R.string.successfull_deleted_book),
                                 Toast.LENGTH_LONG
                             ).show()
-                            findNavController().navigate(R.id.action_updateBookFragment_to_reportsListFragment)
+                            findNavController().navigate(R.id.action_updateBookFragment_to_booksListFragment)
                         }
                         else {
                             Toast.makeText(
