@@ -12,5 +12,8 @@ data class Book(
     val dtlaunch : String,
     val publishcompany : String,
     val npages : Int,
-    val cape : String
+    val cape : String,
+    val users_id : Int,
+    val created_at : String,
+    val user_name: String
 ) : Parcelable

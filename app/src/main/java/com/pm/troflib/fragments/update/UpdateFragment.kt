@@ -38,7 +38,7 @@ class UpdateFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_update_delete_book, menu)
+        inflater.inflate(R.menu.update_delete_menu_book, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

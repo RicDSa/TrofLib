@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.pm.troflib.fragments.book_list.ListFragment"
+        android:name="com.pm.troflib.fragments.list.ListFragment"
         android:label="Book List"
         tools:layout="@layout/fragment_list" >
         <action
@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_listFragment_to_updateFragment"
             app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -36,5 +39,59 @@
         <argument
             android:name="currentBook"
             app:argType="com.pm.troflib.data.entities.Book" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsListFragment"
+        android:name="com.pm.troflib.fragments.book_list.BooksListFragment"
+        android:label="@string/books_list"
+        tools:layout="@layout/fragment_books_list">
+        <action
+            android:id="@+id/action_reportsListFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_reportsListFragment_to_updateBookFragment"
+            app:destination="@id/updateBookFragment" />
+        <action
+            android:id="@+id/action_reportsListFragment_to_addReportFragment"
+            app:destination="@id/addBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.pm.troflib.fragments.login.UserLoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_user_login">
+        <action
+            android:id="@+id/action_userLoginFragment_to_reportsListFragment"
+            app:destination="@id/reportsListFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateReportFragment"
+        android:name="com.pm.troflib.fragments.update_book.UpdateBookFragment"
+        android:label="@string/update_report"
+        tools:layout="@layout/fragment_update_book">
+        <action
+            android:id="@+id/action_updateReportFragment_to_reportsListFragment"
+            app:destination="@id/booksListFragment" />
+        <argument
+            android:name="currentReport"
+            app:argType="com.pm.troflib.api.models.Book" />
+        <action
+            android:id="@+id/action_updateReportFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.pm.troflib.fragments.book.add.AddBookFragment"
+        android:label="@string/add_book"
+        tools:layout="@layout/fragment_add_book">
+        <action
+            android:id="@+id/action_addReportFragment_to_reportsListFragment"
+            app:destination="@id/booksListFragment" />
+        <action
+            android:id="@+id/action_addReportFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
     </fragment>
 </navigation>

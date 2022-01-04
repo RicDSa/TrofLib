@@ -3,15 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.add.AddFragment">
-
-    <include
-        android:id="@+id/llProgressBar"
-        layout="@layout/progessbar"
-        android:visibility="gone" />
+    tools:context=".fragments.update_book.UpdateBookFragment">
 
     <LinearLayout
-        android:id="@+id/ll_main_layout_add_report"
+        android:id="@+id/ll_main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left"
@@ -101,5 +96,4 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
-
 </FrameLayout>

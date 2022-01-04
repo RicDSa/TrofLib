@@ -13,6 +13,7 @@ interface BookApi {
     @POST("books/create")
     fun createReport(
         @Header("Authorization") token: String,
+        @Field("users_id") users_id: String?,
         @Field("title") title: String,
         @Field("author") author: String,
         @Field("genre") genre: String,

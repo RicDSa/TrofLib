@@ -1,4 +1,4 @@
-package com.pm.troflib.fragments.book_list
+package com.pm.troflib.fragments.list
 
 import android.graphics.Color
 import android.view.LayoutInflater

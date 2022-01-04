@@ -26,8 +26,13 @@
     <string name="error_something_went_wrong">Ups! Something went wrong. Please try again.</string>
     <string name="fill_username_and_password">Please fill username and password!</string>
     <string name="books_list">Books</string>
-    <string name="ony_edit_your_reports">Ups! You can only update or delete your notes.</string>
-    <string name="description">Description</string>
+    <string name="only_edit_your_books">Ups! You can only update or delete your books.</string>
+    <string name="author">Author</string>
+    <string name="genre">Genre</string>
+    <string name="dtlaunch">Data de lançamento</string>
+    <string name="publishcompany">Publish Company</string>
+    <string name="npages">Nº páginas</string>
+    <string name="cape">Capa</string>
     <string name="hello">Hello</string>
     <string name="logout">Logout</string>
     <string name="logout_question">Do you want log out?</string>
