@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/reports_list_refresh"
+    <item android:id="@+id/books_list_refresh"
         android:title="@string/refresh"
         android:icon="@drawable/ic_baseline_refresh_24"
         android:iconTint="@android:color/white"

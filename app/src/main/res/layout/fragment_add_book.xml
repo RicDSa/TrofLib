@@ -11,7 +11,7 @@
         android:visibility="gone" />
 
     <LinearLayout
-        android:id="@+id/ll_main_layout_add_report"
+        android:id="@+id/ll_main_layout_add_book"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="left"

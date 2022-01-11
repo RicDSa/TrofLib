@@ -37,7 +37,7 @@ class BooksListFragment : Fragment(){
         getAndSetData(view)
 
         view.btn_add_new_book_from_books_list.setOnClickListener() {
-            findNavController().navigate(R.id.action_reportsListFragment_to_addReportFragment)
+            findNavController().navigate(R.id.action_booksListFragment_to_addBookFragment)
         }
 
         return view
@@ -54,7 +54,7 @@ class BooksListFragment : Fragment(){
             logout()
         }
 
-        if(item.itemId == R.id.reports_list_refresh){
+        if(item.itemId == R.id.books_list_refresh){
             _view?.let { getAndSetData(it) }
         }
 

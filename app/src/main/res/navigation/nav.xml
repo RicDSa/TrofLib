@@ -52,7 +52,7 @@
             android:id="@+id/action_booksListFragment_to_updateBookFragment"
             app:destination="@id/updateBookFragment" />
         <action
-            android:id="@+id/action_reportsListFragment_to_addReportFragment"
+            android:id="@+id/action_booksListFragment_to_addBookFragment"
             app:destination="@id/addBookFragment" />
     </fragment>
     <fragment
@@ -63,9 +63,6 @@
         <action
             android:id="@+id/action_userLoginFragment_to_booksListFragment"
             app:destination="@id/booksListFragment" />
-        <action
-            android:id="@+id/action_userLoginFragment_to_listFragment"
-            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateBookFragment"

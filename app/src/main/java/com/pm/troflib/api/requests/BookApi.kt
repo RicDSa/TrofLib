@@ -6,11 +6,11 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface BookApi {
-    @GET("books/read")
+    @GET("book/read")
     fun getBooks(@Header("Authorization") token: String): Call<List<Book>>
 
     @FormUrlEncoded
-    @POST("books/create")
+    @POST("book/create")
     fun createBook(
         @Header("Authorization") token: String,
         @Field("users_id") users_id: String?,
@@ -24,7 +24,7 @@ interface BookApi {
     ): Call<BookDto>
 
     @FormUrlEncoded
-    @POST("books/update")
+    @POST("book/update")
     fun updateBook(
         @Header("Authorization") token: String,
         @Field("id") id: Int,
@@ -38,6 +38,6 @@ interface BookApi {
     ): Call<BookDto>
 
     @FormUrlEncoded
-    @POST("books/delete")
+    @POST("book/delete")
     fun deleteBook(@Header("Authorization") token: String, @Field("id") id: Int): Call<BookDto>
 }
