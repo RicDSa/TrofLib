@@ -37,7 +37,9 @@
     <string name="logout">Logout</string>
     <string name="logout_question">Do you want log out?</string>
     <string name="refresh">Refresh</string>
+    <string name="location">Location</string>
     <string name="add_book">New book</string>
+    <string name="maps">Maps</string>
     <string name="update_book">Update book</string>
     <string name="fill_title_and_description">Please fill title and description!</string>
     <string name="successfull_added_new_book">Book has been successfully added!</string>
@@ -47,4 +49,6 @@
     <string name="successfull_updated_book">Book has been successfully updated!</string>
     <string name="session_expired">Session expired</string>
     <string name="session_expired_message">Session has been expired. Please sign in.</string>
+    <string name="map">Kotlin Google Map Current Location</string>
+    <string name="title_activity_maps">Map Current Location</string>
 </resources>

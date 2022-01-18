@@ -36,11 +36,10 @@ class UpdateBookFragment : Fragment() {
 
         view.update_book_title.setText(args.currentBook.title)
         view.update_book_author.setText(args.currentBook.author)
-        view.update_book_author.setText(args.currentBook.genre)
-        view.update_book_author.setText(args.currentBook.dtlaunch)
-        view.update_book_author.setText(args.currentBook.publishcompany)
-        view.update_book_author.setText(args.currentBook.npages)
-        view.update_book_author.setText(args.currentBook.cover)
+        view.update_book_genre.setText(args.currentBook.genre)
+        view.update_book_dtlaunch.setText(args.currentBook.dtlaunch)
+        view.update_book_publishcompany.setText(args.currentBook.publishcompany)
+        view.update_book_cover.setText(args.currentBook.cover)
 
         return view
     }

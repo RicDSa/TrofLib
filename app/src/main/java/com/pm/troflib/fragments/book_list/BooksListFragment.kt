@@ -54,6 +54,10 @@ class BooksListFragment : Fragment(){
             logout()
         }
 
+        if (item.itemId == R.id.location) {
+            location()
+        }
+
         if(item.itemId == R.id.books_list_refresh){
             _view?.let { getAndSetData(it) }
         }
@@ -114,4 +118,9 @@ class BooksListFragment : Fragment(){
         builder.setMessage(getString((R.string.logout_question)))
         builder.create().show()
     }
+
+    private fun location() {
+        findNavController().navigate(R.id.action_booksListFragment_to_mapsFragment)
+    }
+
 }
