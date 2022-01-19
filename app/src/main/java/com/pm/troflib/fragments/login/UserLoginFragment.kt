@@ -33,6 +33,7 @@ class UserLoginFragment : Fragment() {
             signin(view)
         }
 
+
         return  view
     }
 
@@ -44,6 +45,7 @@ class UserLoginFragment : Fragment() {
             signinRequest(view)
         }
     }
+
 
     private fun signinRequest(view: View){
         val request = ServiceBuilder.buildService(UsersApi::class.java)

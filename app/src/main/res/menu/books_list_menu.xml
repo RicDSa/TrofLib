@@ -8,9 +8,9 @@
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/location"
-        android:title="@string/location"
-        android:icon="@drawable/ic_baseline_location_on_24"
+    <item android:id="@+id/maps"
+        android:title="@string/refresh"
+        android:icon="@drawable/ic_baseline_map_24"
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"/>
 

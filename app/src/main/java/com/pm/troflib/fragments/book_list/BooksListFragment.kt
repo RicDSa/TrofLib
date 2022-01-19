@@ -2,11 +2,13 @@ package com.pm.troflib.fragments.book_list
 
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.pm.troflib.Maps
 import com.pm.troflib.R
 import com.pm.troflib.api.models.Book
 import com.pm.troflib.api.requests.BookApi
@@ -54,8 +56,9 @@ class BooksListFragment : Fragment(){
             logout()
         }
 
-        if (item.itemId == R.id.location) {
-            location()
+        if(item.itemId == R.id.maps){
+            val intent = Intent(requireContext(), Maps::class.java)
+            startActivity(intent)
         }
 
         if(item.itemId == R.id.books_list_refresh){
@@ -117,10 +120,6 @@ class BooksListFragment : Fragment(){
         builder.setTitle(getString(R.string.logout))
         builder.setMessage(getString((R.string.logout_question)))
         builder.create().show()
-    }
-
-    private fun location() {
-        findNavController().navigate(R.id.action_booksListFragment_to_mapsFragment)
     }
 
 }

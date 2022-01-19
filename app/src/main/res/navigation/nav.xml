@@ -55,8 +55,8 @@
             android:id="@+id/action_booksListFragment_to_addBookFragment"
             app:destination="@id/addBookFragment" />
         <action
-            android:id="@+id/action_booksListFragment_to_mapsFragment"
-            app:destination="@id/Mapsfragment" />
+            android:id="@+id/action_booksListFragment_to_mapsActivity"
+            app:destination="@id/Maps" />
     </fragment>
     <fragment
         android:id="@+id/userLoginFragment"
@@ -95,8 +95,8 @@
             app:destination="@id/userLoginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/Mapsfragment"
-        android:name="com.pm.troflib.fragments.MapsFragment"
+        android:id="@+id/Maps"
+        android:name="com.pm.troflib.Maps"
         android:label="@string/maps"
         tools:layout="@layout/activity_maps" >
     </fragment>

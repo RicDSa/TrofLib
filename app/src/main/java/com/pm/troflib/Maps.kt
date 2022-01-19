@@ -1,4 +1,4 @@
-package com.pm.troflib.fragments
+package com.pm.troflib
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -15,16 +15,15 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.pm.troflib.R
 
-class MapsFragment : FragmentActivity(), OnMapReadyCallback {
+class Maps : FragmentActivity(), OnMapReadyCallback {
     private lateinit var currentLocation: Location
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private val permissionCode = 101
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        fusedLocationProviderClient =  LocationServices.getFusedLocationProviderClient(this@MapsFragment)
+        setContentView(R.layout.activity_maps)
+        fusedLocationProviderClient =  LocationServices.getFusedLocationProviderClient(this@Maps)
         fetchLocation()
     }
     private fun fetchLocation() {
@@ -45,7 +44,7 @@ class MapsFragment : FragmentActivity(), OnMapReadyCallback {
                         currentLocation.longitude, Toast.LENGTH_SHORT).show()
                 val supportMapFragment = (supportFragmentManager.findFragmentById(R.id.map) as
                         SupportMapFragment?)!!
-                supportMapFragment.getMapAsync(this@MapsFragment)
+                supportMapFragment.getMapAsync(this@Maps)
             }
         }
     }
@@ -58,11 +57,12 @@ class MapsFragment : FragmentActivity(), OnMapReadyCallback {
     }
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String?>,
                                             grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
             permissionCode -> if (grantResults.isNotEmpty() && grantResults[0] ==
-            PackageManager.PERMISSION_GRANTED) {
-            fetchLocation()
-        }
+                PackageManager.PERMISSION_GRANTED) {
+                fetchLocation()
+            }
         }
     }
 }
